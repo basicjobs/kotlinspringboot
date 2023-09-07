@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://175.126.73.82:3306/okky
+    username: admin
+    password: okky123!
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+        show_sql: true
+        dialect: org.hibernate.dialect.MariaDBDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+      generate-ddl: false
+      properties:
+      temp:
+        use_jdbc_metadata_defaults: false
